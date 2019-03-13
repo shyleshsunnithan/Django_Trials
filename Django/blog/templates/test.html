@@ -1,0 +1,18 @@
+<h1>Resumes</h1>{% for i in resume %}
+</br> <b>Name</b> {{i.name}} </br>
+</br> <b>Last Name</b> {{i.lname}} </br>
+</br> <b>Age</b> {{i.age}} </br>
+</br> <b>Skills</b> <br>{% for j in i.skills %}<br>{{j}}<br> {% endfor %} </br>
+</br> <b>Experience</b> <br>{% for k in i.exp %}<br>{{k}}<br> {% endfor %} </br>
+<hr>
+    {% endfor %}
+
+<h1>Add New Resume Here</h1> 
+<form action="/test">
+    First name: <input type="text" name="firstname"><br>
+    Last Name: <input type="text" name="lastname"><br>
+    Age: <input type="number" name="age"><br>
+    Skills: <input type="text" name="skill">
+    Experience: <input type="text" name="exp">
+    <input type="submit" value="SUBMIT">
+</form>
