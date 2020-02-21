@@ -4,7 +4,7 @@ def blog(request):
     return HttpResponse("<h1>Hi There</h1>")
 
 def kope(request):
-    return JsonResponse({"hello " : "<h1>How Are You/h1>"})
+    return JsonResponse({"hello " : "<h1>Hope You Are Good/h1>"})
 
 def portfolio(request):
     return render(request,"test.html",{"resume":[{"name":"Shylesh","lname":"Unnithan","age":"19","skills":["Python","Python Django","C++"],"exp":["Intern at Spider Innovative","ECC, IEEE Kochi Hub","Vice-Chairman, CS Chapter IEEE SB CEC"]},
