@@ -1,7 +1,7 @@
 from django.http import HttpResponse,JsonResponse
 from django.shortcuts import render
 def blog(request):
-    return HttpResponse("<h1>Hello World</h1>")
+    return HttpResponse("<h1>Hi There</h1>")
 
 def kope(request):
     return JsonResponse({"hello " : "<h1>How Are You/h1>"})
